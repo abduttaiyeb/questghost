@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marck Script'), local('MarckScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/marckscript/v4/O_D1NAZVOFOobLbVtW3bcnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+/* style */
+
+@-webkit-keyframes anim{
+  to{
+
+    -webkit-transform: translate(0) rotate(0) scale(1) skew(0);
+  }
+}
+@-webkit-keyframes text{
+  to{
+    text-shadow: 0 0 1px #0D3454;
+  }
+}
+
+@-moz-keyframes anim{
+  to{
+  
+    -moz-transform: translate(0) rotate(0) scale(1) skew(0);
+  }
+}
+@-moz-keyframes text{
+  to{
+    text-shadow: 0 0 1px #0D3454;
+  }
+}
+
+
+html{height: 100%;}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background:-webkit-radial-gradient( center center,circle cover,white ,rgb(226, 216, 173));
+
+  background:-moz-radial-gradient( center center,circle cover,white ,rgb(226, 216, 173));
+  
+}
+.foo{
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+p{
+  position: relative;
+  top: 5%;
+  width: 500px;
+  margin: 0 auto;
+  font-family: 'Marck Script';
+  font-size: 30px;
+  line-height: 45px;
+  color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 0 0 25px #0D3454;
+  -webkit-transform: scale(3);
+  -webkit-animation: 
+    anim 1s 2s cubic-bezier(0.620, -0.600, 0.175, 1.650) forwards,
+    text 2s 12s linear forwards;
+
+  -moz-transform: scale(3);
+  -moz-animation: 
+    anim 1s 2s cubic-bezier(0.620, -0.600, 0.175, 1.650) forwards,
+    text 2s 12s linear forwards;
+}
+
+.f1{
+  -webkit-transform: translate(-150px, -10px);
+  -webkit-animation-delay:2s;
+  
+  -moz-transform: translate(-150px, -10px);
+  -moz-animation-delay:2s;
+}
+
+.f4{
+  -webkit-transform: translate(50px, 250px) scale(2) rotate(180deg);
+  -webkit-animation-delay:3s;
+
+  -moz-transform: translate(50px, 250px) sscale(2) rotate(180deg);
+  -moz-animation-delay:3s;
+}
+
+.f6{
+  -webkit-transform: translate(-50px, -350px) skew(20deg) rotate(-320deg);
+  -webkit-animation-delay:4s;
+
+  -moz-transform: translate(-50px, -350px) skew(20deg) rotate(-320deg);
+  -moz-animation-delay:4s;
+}
+.f7{
+  -webkit-transform: translate(-150px, -150px) scale(1.2) rotate(60deg);
+  -webkit-animation-delay:5s;
+
+  -moz-transform: translate(-150px, -150px) scale(1.2) rotate(60deg);
+  -moz-animation-delay:5s;
+}
+.f8{
+  -webkit-transform: translate(-350px, 350px) scaleY(2) rotate(-20deg);
+  -webkit-animation-delay:6s;
+
+  -moz-transform: translate(-350px, 350px) scaleY(2) rotate(-20deg);
+  -moz-animation-delay:6s;
+}
+.f9{
+  -webkit-transform: translate(-100px, -50px) scale(2);
+  -webkit-animation-delay:7s;
+
+  -moz-transform: translate(-100px, -50px) scale(2);
+  -moz-animation-delay:7s;
+}
+.f10{
+  -webkit-transform: translate(300px, 10px) scale(.5) rotate(380deg);
+  -webkit-animation-delay:8s;
+
+  -moz-transform: translate(300px, 10px) scale(.5) rotate(380deg);
+  -moz-animation-delay:8s;
+}
+.f11{
+  -webkit-transform: translate(-300px, -100px) skewX(50deg);
+  -webkit-animation-delay:9s;
+
+  -moz-transform: translate(-300px, -100px) skewX(50deg) scale(3);
+  -moz-animation-delay:9s;
+}
+.f12{
+  -webkit-transform: translate(300px, 100px) skewX(-50deg) scale(3);
+  -webkit-animation-delay:10s;
+
+  -moz-transform: translate(300px, 100px) skewX(-50deg) scale(3);
+  -moz-animation-delay:10s;
+}
+.f13{
+  -webkit-transform: translate(-500px, 300px) skew(-50deg) scale(5) rotate(-20deg);
+  -webkit-animation-delay:11s;
+
+  -moz-transform: translate(-500px, 300px) skew(-50deg) scale(5) rotate(-20deg);
+  -moz-animation-delay:11s;
+}
